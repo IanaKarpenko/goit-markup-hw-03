@@ -16,19 +16,21 @@
   </head>
   <body>
     <!--Heared of page with navigation-->
-    <div class="overal-container">
-      <header class="header">
+    <!--<div class="overal-container">-->
+    <header class="header">
+      <div class="overal-container">
         <nav class="navigation">
+          <a
+            class="logo link"
+            href="./index.html"
+            aria-label="Логотип веб-студии"
+          >
+            <span lang="en" class="logo-dark"
+              ><span class="logo-web">Web</span>Studio</span
+            >
+          </a>
+
           <ul class="navigation-list list">
-            <li class="navigation-list-element">
-              <a
-                class="logo link"
-                href="./index.html"
-                aria-label="Логотип веб-студии"
-              >
-                <span lang="en"><span class="logo-web">Web</span>Studio</span>
-              </a>
-            </li>
             <li class="navigation-list-element">
               <a
                 class="navigation-list-link link active-page-link"
@@ -63,18 +65,24 @@
             </li>
           </ul>
         </address>
-      </header>
-      <!--Main content of page-->
-      <main>
-        <!--Hero section-->
-        <section class="hero-section">
-          <h1 class="hero-section-header">
-            Эффективные решения для вашего бизнеса
-          </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
-        </section>
-        <!--Advantages section-->
-        <section class="advantages-section">
+      </div>
+    </header>
+    <!--Main content of page-->
+    <main>
+      <!--Hero section-->
+      <section class="hero">
+        <div class="overal-container">
+          <div class="hero-section">
+            <h1 class="hero-section-header">
+              Эффективные решения для вашего бизнеса
+            </h1>
+            <button class="hero-button" type="button">Заказать услугу</button>
+          </div>
+        </div>
+      </section>
+      <!--Advantages section-->
+      <section class="advantages-section">
+        <div class="overal-container">
           <h2 hidden>Наши преимущества</h2>
           <ul class="advantages-list list">
             <li class="advantages-list-element">
@@ -106,130 +114,155 @@
               </p>
             </li>
           </ul>
-        </section>
-        <!--List of services section-->
-        <section class="services-section">
-          <h2 class="services-header">Чем мы занимаемся</h2>
-          <ul class="services-list list">
-            <li class="services-list-element">
-              <img
-                class="services-list-img"
-                src="./images/box1.jpg"
-                alt="пишем код"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li class="services-list-element">
-              <img
-                class="services-list-img"
-                src="./images/box2.jpg"
-                alt="адаптиуем под различные устройства"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li class="services-list-element">
-              <img
-                class="services-list-img"
-                src="./images/box3.jpg"
-                alt="кастомизируем продукт под ваши нужды"
-                width="370"
-                height="294"
-              />
-            </li>
-          </ul>
-        </section>
-        <!--Our team-->
-        <section class="team-section">
-          <h2 class="team-header">Наша команда</h2>
-          <ul class="team-list list">
-            <li class="team-list-element">
-              <img
-                class="team-list-img"
-                src="./images/igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-list-header">Игорь Демьяненко</h3>
-              <p lang="en" class="team-list-profession">Product Designer</p>
-            </li>
-            <li class="team-list-element">
-              <img
-                class="team-list-img"
-                src="./images/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-list-header">Ольга Репина</h3>
-              <p lang="en" class="team-list-profession">Frontend Developer</p>
-            </li>
-            <li class="team-list-element">
-              <img
-                class="team-list-img"
-                src="./images/nickolay.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-list-header">Николай Тарасов</h3>
-              <p lang="en" class="team-list-profession">Marketing</p>
-            </li>
-            <li class="team-list-element">
-              <img
-                class="team-list-img"
-                src="./images/michail.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-list-header">Михаил Ермаков</h3>
-              <p lang="en" class="team-list-profession">UI Designer</p>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <!--Footer of page-->
-      <!--Footer of page-->
-      <footer class="footer">
-        <a
-          class="logo link"
-          href="./index.html"
-          aria-label="Логотип веб-студии"
-        >
-          <span lang="en"><span class="logo-web">Web</span>Studio</span>
-        </a>
-        <address class="footer-address">
-          <ul class="footer-address-list list">
-            <li class="footer-address-element">
-              <a
-                class="footer-address-link footer-address-geo link"
-                href="https://goo.gl/maps/MEUAZSnsSESrG9sy9"
-                target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer-address-link footer-address-nogeo link"
-                href="mailto:info@example.com"
-              >
-                info@example.com
-              </a>
-            </li>
-            <li>
-              <a
-                class="footer-address-link footer-address-nogeo link"
-                href="tel:+380991111111"
-              >
-                +38 099 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
-      </footer>
-    </div>
+        </div>
+      </section>
+      <!--List of services section-->
+      <section class="services-section">
+        <div class="overal-container">
+          <div class="services-container">
+            <h2 class="services-header">Чем мы занимаемся</h2>
+            <ul class="services-list list">
+              <li class="services-list-element">
+                <img
+                  class="services-list-img"
+                  src="./images/box1.jpg"
+                  alt="пишем код"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li class="services-list-element">
+                <img
+                  class="services-list-img"
+                  src="./images/box2.jpg"
+                  alt="адаптиуем под различные устройства"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li class="services-list-element">
+                <img
+                  class="services-list-img"
+                  src="./images/box3.jpg"
+                  alt="кастомизируем продукт под ваши нужды"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--Our team-->
+      <section class="team-section">
+        <div class="overal-container">
+          <div class="team-container">
+            <h2 class="team-header">Наша команда</h2>
+            <ul class="team-list list">
+              <li class="team-list-element">
+                <img
+                  class="team-list-img"
+                  src="./images/igor.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+                <div class="team-card-info">
+                  <h3 class="team-list-header">Игорь Демьяненко</h3>
+                  <p lang="en" class="team-list-profession">Product Designer</p>
+                </div>
+              </li>
+              <li class="team-list-element">
+                <img
+                  class="team-list-img"
+                  src="./images/olga.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+                <div class="team-card-info">
+                  <h3 class="team-list-header">Ольга Репина</h3>
+                  <p lang="en" class="team-list-profession">
+                    Frontend Developer
+                  </p>
+                </div>
+              </li>
+              <li class="team-list-element">
+                <img
+                  class="team-list-img"
+                  src="./images/nickolay.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+                <div class="team-card-info">
+                  <h3 class="team-list-header">Николай Тарасов</h3>
+                  <p lang="en" class="team-list-profession">Marketing</p>
+                </div>
+              </li>
+              <li class="team-list-element">
+                <img
+                  class="team-list-img"
+                  src="./images/michail.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+                <div class="team-card-info">
+                  <h3 class="team-list-header">Михаил Ермаков</h3>
+                  <p lang="en" class="team-list-profession">UI Designer</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer of page-->
+    <!--Footer of page-->
+    <footer class="footer">
+      <div class="overal-container">
+        <div class="footer-container">
+          <a
+            class="logo link"
+            href="./index.html"
+            aria-label="Логотип веб-студии"
+          >
+            <span lang="en" class="logo-light"
+              ><span class="logo-web">Web</span>Studio</span
+            >
+          </a>
+          <address class="footer-address">
+            <ul class="footer-address-list list">
+              <li class="footer-address-element">
+                <a
+                  class="footer-address-link footer-address-geo link"
+                  href="https://goo.gl/maps/MEUAZSnsSESrG9sy9"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-address-element">
+                <a
+                  class="footer-address-link footer-address-nogeo link"
+                  href="mailto:info@example.com"
+                >
+                  info@example.com
+                </a>
+              </li>
+              <li class="footer-address-element">
+                <a
+                  class="footer-address-link footer-address-nogeo link"
+                  href="tel:+380991111111"
+                >
+                  +38 099 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+    <!--</div>-->
   </body>
 </html>

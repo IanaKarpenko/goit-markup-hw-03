@@ -19,7 +19,10 @@
   --footer-geo-xt-color: #ffffff;
   --footer-nogeo-text-color: rgba(255, 255, 255, 0.6);
   --logo-main-text-color: #000000;
-  --logo-first-part-text-color: #2196f3;
+  --logo-first-part-text-color: hsl(207, 90%, 54%);
+  --dark-page-parts-color: #2f303a;
+  --logo-light-color: #ffffff;
+  --logo-dark-color: #000000;
 }
 
 body {
@@ -42,18 +45,54 @@ body {
 }
 
 .overal-container {
-  margin: auto;
+  margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+
+.logo-light {
+  color: var(--logo-light-color);
+}
+
+.logo-dark {
+  color: var(--logo-dark-color);
 }
 
 /*--------------- End General styles -------------------*/
 /*-------------------- Header styles -------------------*/
 
 .header {
+  padding: 32px 0;
+}
+
+.header .overal-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.header .address {
+  margin-left: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-element:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-list {
+  display: flex;
 }
 
 .logo {
@@ -64,19 +103,11 @@ body {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--logo-main-text-color);
+  margin-right: 92px;
 }
 
 .logo-web {
   color: var(--logo-first-part-text-color);
-}
-
-.navigation-list .navigation-list-element {
-  display: flex;
-  flex-direction: row;
-}
-
-.address-list .address-list-element {
-  display: flex;
 }
 
 .navigation-list-link {
@@ -93,6 +124,10 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--address-text-color);
+}
+
+.address-list-element:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-list-link:hover,
@@ -122,8 +157,48 @@ body {
   color: var(--footer-nogeo-text-color);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer {
+  background-color: var(--dark-page-parts-color);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address-element:not(:last-child) {
+  margin-bottom: 9px;
+}
 /*----------------- End Footer styles ------------------*/
 /*-------------------- Hero styles ---------------------*/
+
+.hero {
+  background-color: var(--dark-page-parts-color);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 252px;
+  padding-right: 252px;
+}
 
 .hero-section-header {
   font-weight: 900;
@@ -146,6 +221,14 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--button-text-color);
+
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
+  border-width: 0;
+
+  padding: 10px 32px;
+  margin-top: 30px;
 }
 
 .hero-button:hover,
@@ -174,6 +257,20 @@ body {
   color: var(--descriptions-text);
 }
 
+.advantages-list {
+  display: flex;
+  padding-top: 94px;
+}
+
+.advantages-list-element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-list-element {
+  min-width: 270px;
+  min-height: 100px;
+}
+
 /*---------------- End Advantage styles ----------------*/
 /*------------------ Services styles -------------------*/
 
@@ -184,6 +281,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h2-text-color);
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+}
+
+.services-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.services-list-element:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*----------------- End Services styles ----------------*/
@@ -205,6 +317,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h3-text-color);
+  margin-bottom: 10px;
 }
 
 .team-list-profession {
@@ -214,6 +327,33 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--descriptions-text);
+}
+
+.team-container {
+  margin-top: 94px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+}
+
+.team-list {
+  margin-top: 50px;
+  display: flex;
+}
+
+.team-list-element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-element {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-card-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*------------------- End Team styles ------------------*/
