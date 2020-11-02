@@ -334,6 +334,7 @@ img {
   display: flex;
   flex-direction: column;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
