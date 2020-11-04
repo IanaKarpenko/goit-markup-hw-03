@@ -25,6 +25,7 @@
   --logo-dark-color: #000000;
   --button-color: #f5f4fa;
   --projects-border-color: #eeeeee;
+  --header-subfeature-color: #ececec;
 }
 
 body {
@@ -68,7 +69,7 @@ img {
 /*-------------------- Header styles -------------------*/
 
 .header {
-  padding: 32px 0;
+  padding: 23px 0;
 }
 
 .header .overal-container {
@@ -141,7 +142,7 @@ img {
 }
 
 .header-subfeature {
-  border: 1px solid #ececec;
+  border: 1px solid var(--header-subfeature-color);
 }
 
 /*----------------- End Header styles ------------------*/
@@ -194,14 +195,14 @@ img {
 
 .hero {
   background-color: var(--dark-page-parts-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
   padding-left: 252px;
   padding-right: 252px;
 }
@@ -262,11 +263,16 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--descriptions-text);
+  margin-top: 10px;
+}
+
+.advantages-section {
+  padding-top: 94px;
 }
 
 .advantages-list {
   display: flex;
-  padding-top: 94px;
+  /*padding-top: 94px;*/
 }
 
 .advantages-list-element:not(:last-child) {
@@ -281,6 +287,11 @@ img {
 /*---------------- End Advantage styles ----------------*/
 /*------------------ Services styles -------------------*/
 
+.services-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .services-header {
   font-weight: 700;
   font-size: 36px;
@@ -290,11 +301,11 @@ img {
   color: var(--h2-text-color);
 }
 
-.services-container {
+/*.services-container {
   display: flex;
   flex-direction: column;
   padding-top: 94px;
-}
+}*/
 
 .services-list {
   display: flex;
@@ -336,13 +347,18 @@ img {
   color: var(--descriptions-text);
 }
 
-.team-container {
-  margin-top: 94px;
-  display: flex;
-  flex-direction: column;
+.team-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/*.team-container {
+  /*margin-top: 94px;
+  display: flex;
+  flex-direction: column;
+  /*padding-top: 94px;
+  padding-bottom: 94px;
+}*/
 
 .team-list {
   margin-top: 50px;
@@ -396,10 +412,10 @@ img {
 /*------------ End Project Buttons Styles -------------*/
 /*------------------ Projects Styles ------------------*/
 
-.projects-container {
+/*.projects-container {
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .project-buttons-list {
   display: flex;
@@ -432,7 +448,7 @@ img {
 }
 
 .projects-list-element {
-  border: 1px solid var(--projects-border-color);
+  /*border: 1px solid var(--projects-border-color);*/
   width: 370px;
 }
 
@@ -462,6 +478,9 @@ img {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
+  border-left: 1px solid var(--projects-border-color);
+  border-right: 1px solid var(--projects-border-color);
+  border-bottom: 1px solid var(--projects-border-color);
 }
 
 .projects-list-description {
